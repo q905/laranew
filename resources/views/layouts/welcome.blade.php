@@ -18,9 +18,12 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 		<style>
-			html, body{
+			html{
 				min-height: 100%;
 				
+			}
+			body{
+				margin-bottom: 50px;
 			}
 			
 			.jumbotron{
@@ -30,6 +33,9 @@
 			.footer{
 				text-align: center;
 				height: 50px;
+				position: absolute;
+				bottom: 0px;
+				width: 100%;
 			}
 		</style>
 
