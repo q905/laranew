@@ -45,7 +45,7 @@
 		</div>
 		</nav>
 		<div class = "jumbotron" style="text-align: center"><h1>Albums</h1></div>
-		<div class='container' style="height:300px">
+		<div class='container'>
 			@yield('content')
 		</div>
 		<div class = "footer">
