@@ -19,11 +19,12 @@
 
 		<style>
 			html, body{
-				font-family: 'Comfortaa', Arial;
+				min-height: 100%;
 				
 			}
 			
 			.jumbotron{
+				font-family: 'Comfortaa', Arial;
 				text-align: center;
 			}
 			.footer{
