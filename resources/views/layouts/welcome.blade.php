@@ -53,7 +53,7 @@
 			@yield('content')
 		</div>
 		<div class = "footer">
-			<div class = "jumbotron">Test deployment</div>
+			<div class = "jumbotron">&copy; my demo 2017</div>
 		</div>
     </body>
 </html>

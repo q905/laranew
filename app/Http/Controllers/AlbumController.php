@@ -89,7 +89,6 @@ class AlbumController extends Controller
 	    
 		$album->save();
 		return redirect('/');
-		//return Album::find($request->id);
 	}
 
 }
