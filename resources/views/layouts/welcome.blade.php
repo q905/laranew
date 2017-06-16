@@ -39,7 +39,7 @@
 				position: absolute;
 				bottom: 0px;
 				width: 100%;
-				background: #eee;
+				background: #99f;
 				line-height: 50px;
 			}
 		</style>
