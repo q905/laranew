@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
 
 		<!-- Bootstrap -->
 		<!-- Latest compiled and minified CSS -->
@@ -20,10 +21,12 @@
 		<style>
 			html{
 				min-height: 100%;
+				font-family: 'Ubuntu', Arial;
 				
 			}
 			body{
 				margin-bottom: 50px;
+				font-family: 'Ubuntu', Arial;
 			}
 			
 			.jumbotron{
