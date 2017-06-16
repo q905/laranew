@@ -26,6 +26,10 @@
 			.jumbotron{
 				text-align: center;
 			}
+			.footer{
+				text-align: center;
+				height: 50px;
+			}
 		</style>
 
     </head>
@@ -53,7 +57,7 @@
 			@yield('content')
 		</div>
 		<div class = "footer">
-			<div class = "jumbotron">&copy; my demo 2017</div>
+			<div class = "container text-muted">&copy; my demo 2017</div>
 		</div>
     </body>
 </html>
