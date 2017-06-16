@@ -39,6 +39,8 @@
 				position: absolute;
 				bottom: 0px;
 				width: 100%;
+				background: #eee;
+				line-height: 50px;
 			}
 		</style>
 
