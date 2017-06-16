@@ -22,6 +22,10 @@
 				font-family: 'Comfortaa', Arial;
 				
 			}
+			
+			.jumbotron{
+				text-align: center;
+			}
 		</style>
 
     </head>
@@ -44,7 +48,7 @@
 			</ul>
 		</div>
 		</nav>
-		<div class = "jumbotron" style="text-align: center"><h1>Albums</h1></div>
+		<div class = "jumbotron"><h1>Albums</h1></div>
 		<div class='container'>
 			@yield('content')
 		</div>
