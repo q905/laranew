@@ -48,6 +48,8 @@
 		<div class='container' style="height:300px">
 			@yield('content')
 		</div>
-		
+		<div class = "footer">
+			<div class = "jumbotron">Test deployment</div>
+		</div>
     </body>
 </html>
