@@ -1,0 +1,2229 @@
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611183914
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611183914,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/1)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/1’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611164513,1
+[geemc@geemc.beget.tech] < 20170611164626,1
+[geemc@geemc.beget.tech] < 20170611164713,1
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/2 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184045
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184045,2' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/2)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/2’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611164513,1
+[geemc@geemc.beget.tech] < 20170611164626,1
+[geemc@geemc.beget.tech] < 20170611164713,1
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/3 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184052
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184052,3' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/3)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/3’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611164513,1
+[geemc@geemc.beget.tech] < 20170611164626,1
+[geemc@geemc.beget.tech] < 20170611164713,1
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/4 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184057
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184057,4' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/4)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/4’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611164513,1
+[geemc@geemc.beget.tech] < 20170611164626,1
+[geemc@geemc.beget.tech] < 20170611164713,1
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/4 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184102
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184102,4' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/4)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/4’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611164513,1
+[geemc@geemc.beget.tech] < 20170611164626,1
+[geemc@geemc.beget.tech] < 20170611164713,1
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/4 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184212
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184212,4' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/4)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/4’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611164513,1
+[geemc@geemc.beget.tech] < 20170611164626,1
+[geemc@geemc.beget.tech] < 20170611164713,1
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/5 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184310
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184310,5' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/5)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/5’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611164513,1
+[geemc@geemc.beget.tech] < 20170611164626,1
+[geemc@geemc.beget.tech] < 20170611164713,1
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/6 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184322
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184322,6' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/6)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/6’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611164513,1
+[geemc@geemc.beget.tech] < 20170611164626,1
+[geemc@geemc.beget.tech] < 20170611164713,1
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/7 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184325
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184325,7' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/7)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/7’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611164513,1
+[geemc@geemc.beget.tech] < 20170611164626,1
+[geemc@geemc.beget.tech] < 20170611164713,1
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/8 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184328
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184328,8' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/8)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/8’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611164626,1
+[geemc@geemc.beget.tech] < 20170611164713,1
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/9 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184331
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184331,9' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/9)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/9’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611164713,1
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/10 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184338
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184338,10' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/10)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/10’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611171228,1
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/11 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184341
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184341,11' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/11)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/11’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611171617,1
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/12 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184344
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184344,12' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/12)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/12’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611183840,1
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/13 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184346
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184346,13' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/13)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/13’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611183914,1
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/14 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184348
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184348,14' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/14)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/14’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611184045,2
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] < 20170611184348,14
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/15 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184351
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184351,15' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/15)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/15’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611184052,3
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] < 20170611184348,14
+[geemc@geemc.beget.tech] < 20170611184351,15
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/16 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184353
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184353,16' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/16)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/16’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611184057,4
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] < 20170611184348,14
+[geemc@geemc.beget.tech] < 20170611184351,15
+[geemc@geemc.beget.tech] < 20170611184353,16
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/17 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184355
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184355,17' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/17)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/17’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611184102,4
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] < 20170611184348,14
+[geemc@geemc.beget.tech] < 20170611184351,15
+[geemc@geemc.beget.tech] < 20170611184353,16
+[geemc@geemc.beget.tech] < 20170611184355,17
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/18 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184357
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184357,18' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/18)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/18’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611184212,4
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] < 20170611184348,14
+[geemc@geemc.beget.tech] < 20170611184351,15
+[geemc@geemc.beget.tech] < 20170611184353,16
+[geemc@geemc.beget.tech] < 20170611184355,17
+[geemc@geemc.beget.tech] < 20170611184357,18
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/19 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184402
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184402,19' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/19)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/19’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611184310,5
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] < 20170611184348,14
+[geemc@geemc.beget.tech] < 20170611184351,15
+[geemc@geemc.beget.tech] < 20170611184353,16
+[geemc@geemc.beget.tech] < 20170611184355,17
+[geemc@geemc.beget.tech] < 20170611184357,18
+[geemc@geemc.beget.tech] < 20170611184402,19
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/20 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184405
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184405,20' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/20)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/20’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611184322,6
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] < 20170611184348,14
+[geemc@geemc.beget.tech] < 20170611184351,15
+[geemc@geemc.beget.tech] < 20170611184353,16
+[geemc@geemc.beget.tech] < 20170611184355,17
+[geemc@geemc.beget.tech] < 20170611184357,18
+[geemc@geemc.beget.tech] < 20170611184402,19
+[geemc@geemc.beget.tech] < 20170611184405,20
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/21 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184407
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184407,21' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/21)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/21’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611184325,7
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] < 20170611184348,14
+[geemc@geemc.beget.tech] < 20170611184351,15
+[geemc@geemc.beget.tech] < 20170611184353,16
+[geemc@geemc.beget.tech] < 20170611184355,17
+[geemc@geemc.beget.tech] < 20170611184357,18
+[geemc@geemc.beget.tech] < 20170611184402,19
+[geemc@geemc.beget.tech] < 20170611184405,20
+[geemc@geemc.beget.tech] < 20170611184407,21
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/21 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184409
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184409,21' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/21)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/21’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611184328,8
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] < 20170611184348,14
+[geemc@geemc.beget.tech] < 20170611184351,15
+[geemc@geemc.beget.tech] < 20170611184353,16
+[geemc@geemc.beget.tech] < 20170611184355,17
+[geemc@geemc.beget.tech] < 20170611184357,18
+[geemc@geemc.beget.tech] < 20170611184402,19
+[geemc@geemc.beget.tech] < 20170611184405,20
+[geemc@geemc.beget.tech] < 20170611184407,21
+[geemc@geemc.beget.tech] < 20170611184409,21
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/21 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184414
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184414,21' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/21)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/21’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611184331,9
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] < 20170611184348,14
+[geemc@geemc.beget.tech] < 20170611184351,15
+[geemc@geemc.beget.tech] < 20170611184353,16
+[geemc@geemc.beget.tech] < 20170611184355,17
+[geemc@geemc.beget.tech] < 20170611184357,18
+[geemc@geemc.beget.tech] < 20170611184402,19
+[geemc@geemc.beget.tech] < 20170611184405,20
+[geemc@geemc.beget.tech] < 20170611184407,21
+[geemc@geemc.beget.tech] < 20170611184409,21
+[geemc@geemc.beget.tech] < 20170611184414,21
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/21 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184430
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184430,21' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/21)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/21’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 20/
+[geemc@geemc.beget.tech] < 19/
+[geemc@geemc.beget.tech] < 18/
+[geemc@geemc.beget.tech] < 17/
+[geemc@geemc.beget.tech] < 16/
+[geemc@geemc.beget.tech] < 15/
+[geemc@geemc.beget.tech] < 12/
+[geemc@geemc.beget.tech] < 14/
+[geemc@geemc.beget.tech] < 13/
+[geemc@geemc.beget.tech] < 11/
+[geemc@geemc.beget.tech] < 10/
+[geemc@geemc.beget.tech] < 9/
+[geemc@geemc.beget.tech] < 8/
+[geemc@geemc.beget.tech] < 7/
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611184338,10
+[geemc@geemc.beget.tech] < 20170611184341,11
+[geemc@geemc.beget.tech] < 20170611184344,12
+[geemc@geemc.beget.tech] < 20170611184346,13
+[geemc@geemc.beget.tech] < 20170611184348,14
+[geemc@geemc.beget.tech] < 20170611184351,15
+[geemc@geemc.beget.tech] < 20170611184353,16
+[geemc@geemc.beget.tech] < 20170611184355,17
+[geemc@geemc.beget.tech] < 20170611184357,18
+[geemc@geemc.beget.tech] < 20170611184402,19
+[geemc@geemc.beget.tech] < 20170611184405,20
+[geemc@geemc.beget.tech] < 20170611184407,21
+[geemc@geemc.beget.tech] < 20170611184409,21
+[geemc@geemc.beget.tech] < 20170611184414,21
+[geemc@geemc.beget.tech] < 20170611184430,21
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/21 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611184520
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611184520,21' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/21)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/21’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611185853
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611185853,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/1)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/1’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611185902
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611185902,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/1)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/1’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611190015
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611190015,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir geemc.beget.tech/releases/1)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/releases/1’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d / ]; then mkdir -p /; fi
+[geemc@geemc.beget.tech] > if [ ! -L //current ] && [ -d //current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd / && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘.dep’: Permission denied
+[geemc@geemc.beget.tech] > rm -f //.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d /test ]; then mkdir -p /test; fi
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘/test’
+[geemc@geemc.beget.tech] < [error] : Permission denied
+[geemc@geemc.beget.tech] > rm -f /test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech/test ]; then mkdir -p geemc.beget.tech/test; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/test/current ] && [ -d geemc.beget.tech/test/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/test/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -d geemc.beget.tech/test/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611190322
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (echo '20170611190322,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (mkdir geemc.beget.tech/test/releases/1)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/test/releases/1’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech/test ]; then mkdir -p geemc.beget.tech/test; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/test/current ] && [ -d geemc.beget.tech/test/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/test/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -d geemc.beget.tech/test/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611190415
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (echo '20170611190415,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (mkdir geemc.beget.tech/test/releases/1)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/test/releases/1’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech/test ]; then mkdir -p geemc.beget.tech/test; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/test/current ] && [ -d geemc.beget.tech/test/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/test/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611190322,1
+[geemc@geemc.beget.tech] < 20170611190415,1
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -d geemc.beget.tech/test/releases/2 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611190509
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (echo '20170611190509,2' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (mkdir geemc.beget.tech/test/releases/2)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/test/releases/2’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech/test ]; then mkdir -p geemc.beget.tech/test; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/test/current ] && [ -d geemc.beget.tech/test/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/test/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611190322,1
+[geemc@geemc.beget.tech] < 20170611190415,1
+[geemc@geemc.beget.tech] < 20170611190509,2
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -d geemc.beget.tech/test/releases/3 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611190516
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (echo '20170611190516,3' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (mkdir geemc.beget.tech/test/releases/3)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/test/releases/3’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech/test ]; then mkdir -p geemc.beget.tech/test; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/test/current ] && [ -d geemc.beget.tech/test/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/test/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611190322,1
+[geemc@geemc.beget.tech] < 20170611190415,1
+[geemc@geemc.beget.tech] < 20170611190509,2
+[geemc@geemc.beget.tech] < 20170611190516,3
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -d geemc.beget.tech/test/releases/4 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611190520
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (echo '20170611190520,4' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (mkdir geemc.beget.tech/test/releases/4)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/test/releases/4’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech/test ]; then mkdir -p geemc.beget.tech/test; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/test/current ] && [ -d geemc.beget.tech/test/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/test/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611190322,1
+[geemc@geemc.beget.tech] < 20170611190415,1
+[geemc@geemc.beget.tech] < 20170611190509,2
+[geemc@geemc.beget.tech] < 20170611190516,3
+[geemc@geemc.beget.tech] < 20170611190520,4
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -d geemc.beget.tech/test/releases/5 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611190524
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (echo '20170611190524,5' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (mkdir geemc.beget.tech/test/releases/5)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/test/releases/5’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech/test ]; then mkdir -p geemc.beget.tech/test; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/test/current ] && [ -d geemc.beget.tech/test/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/test/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611190322,1
+[geemc@geemc.beget.tech] < 20170611190415,1
+[geemc@geemc.beget.tech] < 20170611190509,2
+[geemc@geemc.beget.tech] < 20170611190516,3
+[geemc@geemc.beget.tech] < 20170611190520,4
+[geemc@geemc.beget.tech] < 20170611190524,5
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -d geemc.beget.tech/test/releases/6 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611190528
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (echo '20170611190528,6' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (mkdir geemc.beget.tech/test/releases/6)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/test/releases/6’: No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech/test ]; then mkdir -p geemc.beget.tech/test; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/test/current ] && [ -d geemc.beget.tech/test/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/test/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611190322,1
+[geemc@geemc.beget.tech] < 20170611190415,1
+[geemc@geemc.beget.tech] < 20170611190509,2
+[geemc@geemc.beget.tech] < 20170611190516,3
+[geemc@geemc.beget.tech] < 20170611190520,4
+[geemc@geemc.beget.tech] < 20170611190524,5
+[geemc@geemc.beget.tech] < 20170611190528,6
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -d geemc.beget.tech/test/releases/7 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611190532
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (echo '20170611190532,7' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (mkdir geemc.beget.tech/test/releases/7)
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘geemc.beget.tech/test/releases/7’
+[geemc@geemc.beget.tech] < [error] : No such file or directory
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech/test ]; then mkdir -p geemc.beget.tech/test; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/test/current ] && [ -d geemc.beget.tech/test/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/test/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (cd releases && ls -t -1 -d */)
+[geemc@geemc.beget.tech] < 6/
+[geemc@geemc.beget.tech] < 5/
+[geemc@geemc.beget.tech] < 4/
+[geemc@geemc.beget.tech] < 3/
+[geemc@geemc.beget.tech] < 2/
+[geemc@geemc.beget.tech] < 1/
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -f .dep/releases ]; then echo "true"; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (tail -n 15 .dep/releases)
+[geemc@geemc.beget.tech] < 20170611190322,1
+[geemc@geemc.beget.tech] < 20170611190415,1
+[geemc@geemc.beget.tech] < 20170611190509,2
+[geemc@geemc.beget.tech] < 20170611190516,3
+[geemc@geemc.beget.tech] < 20170611190520,4
+[geemc@geemc.beget.tech] < 20170611190524,5
+[geemc@geemc.beget.tech] < 20170611190528,6
+[geemc@geemc.beget.tech] < 20170611190532,7
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -d geemc.beget.tech/test/releases/7 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611191209
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (echo '20170611191209,7' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (mkdir -p geemc.beget.tech/test/releases/7)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (ln -nfs --relative geemc.beget.tech/test/releases/7 geemc.beget.tech/test/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/test/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/test/current
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611191323
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611191323,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir -p geemc.beget.tech/releases/1)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (ln -nfs --relative geemc.beget.tech/releases/1 geemc.beget.tech/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/current
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611191402
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611191402,1.1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir -p geemc.beget.tech/releases/1.1)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (ln -nfs --relative geemc.beget.tech/releases/1.1 geemc.beget.tech/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/current
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d current ]; then mkdir -p current; fi
+[geemc@geemc.beget.tech] > if [ ! -L current/current ] && [ -d current/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd current && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd current && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd current && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f current/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch current/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd current && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd current && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd current && (if [ -d current/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd current && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611191521
+[geemc@geemc.beget.tech] > cd current && (echo '20170611191521,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd current && (mkdir -p current/releases/1)
+[geemc@geemc.beget.tech] > cd current && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd current && (ln -nfs --relative current/releases/1 current/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h current/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink current/current
+[geemc@geemc.beget.tech] > rm -f current/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d / ]; then mkdir -p /; fi
+[geemc@geemc.beget.tech] > if [ ! -L //current ] && [ -d //current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd / && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] < [error] mkdir: cannot create directory ‘.dep’
+[geemc@geemc.beget.tech] < [error] : Permission denied
+[geemc@geemc.beget.tech] > rm -f //.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611201146
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611201146,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir -p geemc.beget.tech/releases/1)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (ln -nfs --relative geemc.beget.tech/releases/1 geemc.beget.tech/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/current
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611201237
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611201237,1.1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir -p geemc.beget.tech/releases/1.1)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (ln -nfs --relative geemc.beget.tech/releases/1.1 geemc.beget.tech/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/current
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1.2 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611201546
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611201546,1.1.2' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir -p geemc.beget.tech/releases/1.1.2)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (ln -nfs --relative geemc.beget.tech/releases/1.1.2 geemc.beget.tech/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/current
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > which php
+[geemc@geemc.beget.tech] < /usr/bin/php
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/current
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1.2 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1.2.3 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611202256
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611202256,1.1.2.3' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir -p geemc.beget.tech/releases/1.1.2.3)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (ln -nfs --relative geemc.beget.tech/releases/1.1.2.3 geemc.beget.tech/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/current
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1.2 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1.2.3 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1.2.3.4 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611202648
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611202648,1.1.2.3.4' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir -p geemc.beget.tech/releases/1.1.2.3.4)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (ln -nfs --relative geemc.beget.tech/releases/1.1.2.3.4 geemc.beget.tech/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/current
+[geemc@geemc.beget.tech] < geemc.beget.tech/geemc.beget.tech/releases/1
+[geemc@geemc.beget.tech] > /usr/bin/git clone  --depth 1 --recursive -q git@domain.com:q905/laranew.git geemc.beget.tech/geemc.beget.tech/geemc.beget.tech/releases/1 2>&1
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1.2 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1.2.3 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1.2.3.4 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1.1.2.3.4.5 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611202822
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611202822,1.1.2.3.4.5' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir -p geemc.beget.tech/releases/1.1.2.3.4.5)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (ln -nfs --relative geemc.beget.tech/releases/1.1.2.3.4.5 geemc.beget.tech/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/current
+[geemc@geemc.beget.tech] < geemc.beget.tech/geemc.beget.tech/releases/1
+[geemc@geemc.beget.tech] > /usr/bin/git clone  --depth 1 --recursive -q git@domain.com:q905/laranew.git geemc.beget.tech/geemc.beget.tech/geemc.beget.tech/releases/1 2>&1
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611202957
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611202957,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir -p geemc.beget.tech/releases/1)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (ln -nfs --relative geemc.beget.tech/releases/1 geemc.beget.tech/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/current
+[geemc@geemc.beget.tech] < geemc.beget.tech/geemc.beget.tech/releases/1
+[geemc@geemc.beget.tech] > /usr/bin/git clone  --depth 1 --recursive -q git@github.com:q905/laranew.git geemc.beget.tech/geemc.beget.tech/geemc.beget.tech/releases/1 2>&1
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech/test ]; then mkdir -p geemc.beget.tech/test; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/test/current ] && [ -d geemc.beget.tech/test/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/test/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [ -d geemc.beget.tech/test/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611203144
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (echo '20170611203144,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (mkdir -p geemc.beget.tech/test/releases/1)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/test && (ln -nfs --relative geemc.beget.tech/test/releases/1 geemc.beget.tech/test/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/test/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/test/current
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/test/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech ]; then mkdir -p geemc.beget.tech; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/current ] && [ -d geemc.beget.tech/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [ -d geemc.beget.tech/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611203202
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (echo '20170611203202,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (mkdir -p geemc.beget.tech/releases/1)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech && (ln -nfs --relative geemc.beget.tech/releases/1 geemc.beget.tech/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/current
+[geemc@geemc.beget.tech] < geemc.beget.tech/geemc.beget.tech/releases/1
+[geemc@geemc.beget.tech] > /usr/bin/git clone  --depth 1 --recursive -q git@github.com:q905/laranew.git geemc.beget.tech/geemc.beget.tech/geemc.beget.tech/releases/1 2>&1
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/.dep/deploy.lock
+[geemc@geemc.beget.tech] > echo $0
+[geemc@geemc.beget.tech] < ssh multiplexing initialization
+[geemc@geemc.beget.tech] < bash
+[geemc@geemc.beget.tech] > if [ ! -d geemc.beget.tech/public_html ]; then mkdir -p geemc.beget.tech/public_html; fi
+[geemc@geemc.beget.tech] > if [ ! -L geemc.beget.tech/public_html/current ] && [ -d geemc.beget.tech/public_html/current ]; then echo true; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/public_html && if [ ! -d .dep ]; then mkdir .dep; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/public_html && if [ ! -d releases ]; then mkdir releases; fi
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/public_html && if [ ! -d shared ]; then mkdir shared; fi
+[geemc@geemc.beget.tech] > if [ -f geemc.beget.tech/public_html/.dep/deploy.lock ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > touch geemc.beget.tech/public_html/.dep/deploy.lock
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/public_html && (if [ -h release ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/public_html && ([ -d releases ] && [ "$(ls -A releases)" ] && echo "true" || echo "false")
+[geemc@geemc.beget.tech] < false
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/public_html && (if [ -d geemc.beget.tech/public_html/releases/1 ]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/public_html && (date +"%Y%m%d%H%M%S")
+[geemc@geemc.beget.tech] < 20170611203351
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/public_html && (echo '20170611203351,1' >> .dep/releases)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/public_html && (mkdir -p geemc.beget.tech/public_html/releases/1)
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/public_html && (if [[ $(man ln 2>&1 || ln -h 2>&1 || ln --help 2>&1) =~ '--relative' ]]; then echo 'true'; fi)
+[geemc@geemc.beget.tech] < true
+[geemc@geemc.beget.tech] > cd geemc.beget.tech/public_html && (ln -nfs --relative geemc.beget.tech/public_html/releases/1 geemc.beget.tech/public_html/release)
+[geemc@geemc.beget.tech] > which git
+[geemc@geemc.beget.tech] < /usr/bin/git
+[geemc@geemc.beget.tech] > /usr/bin/git version
+[geemc@geemc.beget.tech] < git version 1.7.9.5
+[geemc@geemc.beget.tech] > if [ -h geemc.beget.tech/public_html/release ]; then echo 'true'; fi
+[geemc@geemc.beget.tech] > readlink geemc.beget.tech/public_html/current
+[geemc@geemc.beget.tech] > rm -f geemc.beget.tech/public_html/.dep/deploy.lock
