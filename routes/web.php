@@ -29,3 +29,9 @@ Route::get('/edit/{id}', 'AlbumController@edit');
 Route::get('/delete/{id}', ['middleware'=>'auth', 'uses'=>'AlbumController@delete']);
 Route::post('/store', 'AlbumController@store');
 Route::post('/update', 'AlbumController@update');
+
+
+//Заглушка
+Route::get('/dev', function(){
+		return view('dev'); 
+	});

@@ -1,17 +1,19 @@
 @extends('layouts.welcome')
-@section('content')
 
-<span>&nbsp;&nbsp;&nbsp;<a href = "{{ url('/') }}">Все записи</a></span>
+@section('left_menu')
+<p><a href = "{{ url('/') }}">Все записи</a></p>
 @if(Auth::check())
     
-    <span>&nbsp;&nbsp;&nbsp;<a href = "{{ url('/user') .'/'. Auth::user()->id }}">Мои записи</a></span>
-    <span>&nbsp;&nbsp;&nbsp;<a href="{{ url('/create') }}">+Добавить</a></span>
-    <span>&nbsp;&nbsp;&nbsp;<a href="javascript: alert('test deploy')">Test deploy</a></span>
+    <p><a href = "{{ url('/user') .'/'. Auth::user()->id }}">Мои записи</a></p>
+    <p><a href="{{ url('/create') }}">+Добавить</a></p>
+    <p><a href="javascript: alert('test deploy')">Test deploy</a></p>
     
 @endif
     
-    <br><br>
+@endsection
 
+@section('content')
+<div class = "tbl">
      <table class = "table-striped table-hover" style="width: 100%; height:300px">
 		 
 		 <tr>
@@ -33,6 +35,8 @@
 			 echo "<td>".$album->id."</td><td>".$album->title."</td><td>".$album->artist."</td><td>".$album->descript."</td><td>".$album->user_id."</td>";
 			 if(Auth::check() && Auth::user()->id == $album->user_id){
 				echo "<td><a href='".url('/delete/'.$album->id)."'>Удалить</a></td>"."<td><a href='".url('/edit/'.$album->id)."'>Изменить</a></td>";
+			} else {
+				echo "<td>&nbsp;</td><td>&nbsp;</td>";
 			}
 			 echo "</tr>";
 		 }
@@ -42,7 +46,9 @@
 		 ?>
 		
 	</table>
-		 
-		 <?php echo "<div style='text-align:center'>".$albums->render()."</div>"; ?>
+		 </div>
+		 <div class = "pag" style='text-align:center'>
+			 <?php echo $albums->render(); ?>
+		 </div>
 
 @endsection

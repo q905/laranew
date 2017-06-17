@@ -20,6 +20,34 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 		<style>
+			.navbar {
+				margin-bottom: 0;
+				border-radius: 0;
+			}
+			
+			.row.content {height: 571px}
+			
+			.sidenav {
+				padding-top: 15px;
+				background-color: #f7f7f7;
+				height: 100%;
+				//border: 1px solid red
+			}
+			
+			footer {
+				background-color: #555;
+				color: white;
+				padding: 15px;
+			}
+			
+			@media screen and (max-width: 767px) {
+				.sidenav {
+					height: 100%;
+					padding: 15px;
+				}
+				.row.content {height:auto;} 
+			}
+			
 			html{
 				min-height: 100%;
 				font-family: 'Ubuntu', Arial;
@@ -33,44 +61,111 @@
 			.jumbotron{
 				font-family: 'Comfortaa', Arial;
 				text-align: center;
+			
+			#my{
+				font-family: 'Comfortaa', Arial;
 			}
-			.footer{
-				text-align: center;
-				height: 50px;
+			
+			}
+			footer{
 				position: absolute;
 				bottom: 0px;
 				width: 100%;
 				background: #eee;
 				line-height: 50px;
+				left: 0px;
 			}
+			tr{
+				height:30px
+			}
+			.tbl{
+				height: 550px;
+			}
+			table{
+				margin: 0 0 0 0;
+			}
+			.pag{
+				width: 200px;
+				position: absolute;
+				left: 50%;
+				bottom: 0px;
+				margin: -100px 0 0 -100px;
+			}
+			
 		</style>
 
     </head>
     <body>
 		
 		<nav class = "navbar navbar-inverse">
-		<div class="container">
+		<div class="container-fluid">
 			<div class = "navbar-header">
-				<a class = "navbar-brand" href = "{{ url('/') }}"</a>Albums</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a id = "my" class = "navbar-brand" href = "{{ url('/') }}">Albums</a>
 			</div>
 			
-			<ul class = "nav navbar-nav">
-				@if (Auth::check())
-				<li><a href = "{{ url('/home') }}"> {{ Auth::user()->name }}</a></li>
-				<li><a href="{{ url('/logout') }}">Выход </a></li>
-				@else
-				<li><a href="{{ url('/login') }}">Вход </a></li>
-				<li><a href="{{ url('/register') }}">Регистрация</a></li>
-				@endif
-			</ul>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="{{ url('/') }}">Записи</a></li>
+					<li><a href="{{ url('/dev') }}">О сайте</a></li>
+					<li><a href="{{ url('/dev') }}">Projects</a></li>
+					<li><a href="{{ url('/dev') }}">Обо мне</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					@if (Auth::check())
+						<li><a href = "{{ url('/home') }}"><span class="glyphicon glyphicon-user"></span> {{ Auth::user()->name }}</a></li>
+						<li><a href="{{ url('/logout') }}"><span class="glyphicon glyphicon-log-out"></span> Выход </a></li>
+					@else
+						<li><a href="{{ url('/login') }}"><span class="glyphicon glyphicon-log-in"></span> Вход</a></li>
+						<li><a href="{{ url('/register') }}"><span class="glyphicon glyphicon-pencil"></span> Регистрация</a></li>
+					@endif
+					
+				</ul>
+			</div>
+			
+			
 		</div>
 		</nav>
-		<div class = "jumbotron"><h1>Albums</h1></div>
-		<div class='container'>
-			@yield('content')
+		
+		<!----><div style = "height: 100px; line-height: 100px; background: #eee; font-size: 30pt; text-align: center"><p><span class="glyphicon glyphicon-cd"></span></p></div>
+		<div class="container-fluid text-center" style = "height: 100%">    
+			<div class="row content">
+				<div class="col-sm-2 sidenav">
+					
+					<p><a href = "{{ url('/') }}">Все записи</a></p>
+					@if(Auth::check())
+    
+					<p><a href = "{{ url('/user') .'/'. Auth::user()->id }}">Мои записи</a></p>
+					<p><a href="{{ url('/create') }}">+Добавить</a></p>
+					<p><a href="javascript: alert('test deploy')">Test deploy</a></p>
+    
+					@endif
+				</div>
+				
+				<div class="col-sm-8 text-left"> 
+					
+					@yield('content')
+				</div>
+				<div class="col-sm-2 sidenav" style="background: #fff">
+					<div class="well">
+						<p>ADS</p>
+					</div>
+					<div class="well">
+						<p>ADS</p>
+					</div>
+				</div>
+			</div>
+			<footer class="container-fluid text-center text-muted">
+				<span class="glyphicon glyphicon-cd"></span> my demo 2017
+			</footer>
 		</div>
-		<div class = "footer">
-			<div class = "container text-muted">&copy; my demo 2017</div>
-		</div>
+
+
+		
+		
     </body>
 </html>
