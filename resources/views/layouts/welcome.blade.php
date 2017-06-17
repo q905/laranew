@@ -152,11 +152,9 @@
 				</div>
 				<div class="col-sm-2 sidenav" style="background: #fff">
 					<div class="well">
-						<p>ADS</p>
+						<p>&nabla;ADS</p>
 					</div>
-					<div class="well">
-						<p>ADS</p>
-					</div>
+					
 				</div>
 			</div>
 			<footer class="container-fluid text-center text-muted">
