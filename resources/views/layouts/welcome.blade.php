@@ -19,6 +19,37 @@
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45033170 = new Ya.Metrika({
+                    id:45033170,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45033170" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
 		<style>
 			.navbar {
 				margin-bottom: 0;
@@ -89,13 +120,12 @@
 				
 				//margin: 0 0 0 0;
 			}
-			/*.pag{
-				width: 200px;
+			.pag{
 				position: absolute;
-				left: 50%;
-				bottom: 0px;
-				margin: -100px 0 0 -100px;
-			}*/
+				width: 100%;
+				left: 0px;
+				bottom: 100px;
+			}
 			
 		</style>
 
@@ -146,7 +176,6 @@
     
 					<p><a href = "{{ url('/user') .'/'. Auth::user()->id }}">Мои записи</a></p>
 					<p><a href="{{ url('/create') }}">+Добавить</a></p>
-					<p><a href="javascript: alert('test deploy')">Test deploy</a></p>
     
 					@endif
 				</div>
@@ -161,6 +190,9 @@
 					</div>
 					
 				</div>
+			</div>
+			<div class = "pag">
+					@yield('paginator')
 			</div>
 			<footer class=" text-center text-muted footer">
 				<span class="glyphicon glyphicon-cd"></span> my demo 2017

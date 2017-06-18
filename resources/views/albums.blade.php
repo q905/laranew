@@ -44,7 +44,7 @@
 				
 			} else {
 				
-				echo "<td>&nbsp;</td><td>&nbsp;</td>";
+				//echo "<td>&nbsp;</td><td>&nbsp;</td>";
 			}
 			 echo "</tr>";
 		 }
@@ -55,8 +55,12 @@
 		
 	</table>
 		 </div>
-		 <div class = "pag" style='text-align:center'>
-			 <?php echo $albums->render(); ?>
-		 </div>
+		 
+
+@endsection
+
+@section('paginator')
+
+	<?php echo $albums->render(); ?>
 
 @endsection
