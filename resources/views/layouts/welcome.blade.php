@@ -34,11 +34,7 @@
 				//border: 1px solid red
 			}
 			
-			footer {
-				background-color: #555;
-				color: white;
-				padding: 15px;
-			}
+			
 			
 			@media screen and (max-width: 767px) {
 				.sidenav {
@@ -49,44 +45,49 @@
 			}
 			
 			html{
-				height: 100%;
-				font-family: 'Ubuntu', Arial;
+				position:relative;
+				min-height: 100%;
+				//font-family: 'Ubuntu', Arial;
 				
 			}
 			body{
-				//margin-bottom: 50px;
+				margin-bottom: 50px;
 				font-family: 'Ubuntu', Arial;
 			}
 			
 			.jumbotron{
 				font-family: 'Comfortaa', Arial;
-				text-align: center;
+				//text-align: center;
 			
 			}
-			footer{
+			.footer{
 				position: absolute;
 				width: 100%;
 				left: 0px;
 				bottom: 0px;
-				/*
-				
-				
-				background: #eee;
+				height: 50px;
 				line-height: 50px;
-				*/
+				background: #eee;	
 			}
+			
 			tr{
 				height:30px
 			}
-			th, td{
-				width: 300px;
+			
+			th{
+				text-align: center;
 			}
+			
+			#del, #up {
+				//width: 100px;
+			}
+			
 			.tbl{
-				height: 550px;
+				
 			}
 			table{
 				
-				margin: 0 0 0 0;
+				//margin: 0 0 0 0;
 			}
 			/*.pag{
 				width: 200px;
@@ -150,7 +151,7 @@
 					@endif
 				</div>
 				
-				<div class="col-sm-8 text-left"> 
+				<div class="col-sm-8 text-center"> 
 					
 					@yield('content')
 				</div>
@@ -161,7 +162,7 @@
 					
 				</div>
 			</div>
-			<footer class="container-fluid text-center text-muted">
+			<footer class=" text-center text-muted footer">
 				<span class="glyphicon glyphicon-cd"></span> my demo 2017
 			</footer>
 		</div>

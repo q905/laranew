@@ -17,14 +17,14 @@
      <table class = "table-striped table-hover" style="width: 100%;">
 		 
 		 <tr>
-				<th>id</th>
-				<th>Название</th>
-				<th>Исполнитель</th>
-				<th>Описание</th>
-				<th>user_id</th>
+				<th style = "width: 50px">id</th>
+				<th style = "width: 200px">Название</th>
+				<th style = "width: 200px">Исполнитель</th>
+				<th style = "width: 200px">Описание</th>
+				<th style = "width: 50px">user_id</th>
 				@if(Auth::check())
-					<th></th>
-					<th></th>
+					<th style = "width: 50px"></th>
+					<th style = "width: 50px"></th>
 				@endif
 		</tr>
 		 
@@ -32,10 +32,18 @@
 		 
 		 foreach($albums as $album){
 			 echo "<tr>";
-			 echo "<td>".$album->id."</td><td>".$album->title."</td><td>".$album->artist."</td><td>".$album->descript."</td><td>".$album->user_id."</td>";
+			 echo "<td>".$album->id."</td>
+					<td>".$album->title."</td>
+					<td>".$album->artist."</td>
+					<td>".$album->descript."</td>
+					<td>".$album->user_id."</td>";
+					
 			 if(Auth::check() && Auth::user()->id == $album->user_id){
-				echo "<td><a href='".url('/delete/'.$album->id)."'>Удалить</a></td>"."<td><a href='".url('/edit/'.$album->id)."'>Изменить</a></td>";
+				echo "<td id = 'up'><a href='".url('/edit/'.$album->id)."'><span class='glyphicon glyphicon-pencil'></span></a></td>
+				<td id = 'del'><a href='".url('/delete/'.$album->id)."'><span class='glyphicon glyphicon-remove'></span></a></td>";
+				
 			} else {
+				
 				echo "<td>&nbsp;</td><td>&nbsp;</td>";
 			}
 			 echo "</tr>";
