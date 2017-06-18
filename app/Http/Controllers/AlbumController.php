@@ -11,12 +11,12 @@ use Auth;
 class AlbumController extends Controller
 {
     public function index(){
-        $albums=Album::paginate(15);
+        $albums=Album::paginate(10);
         return view('albums', ['albums'=>$albums]);
     }
     
     public function user($my){
-        $albums=Album::where('user_id', '=', $my)->paginate(15);
+        $albums=Album::where('user_id', '=', $my)->paginate(10);
         
         return view('albums', ['albums'=>$albums, 'uid'=>$my]);
     }

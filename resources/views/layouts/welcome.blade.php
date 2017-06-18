@@ -25,12 +25,12 @@
 				border-radius: 0;
 			}
 			
-			.row.content {height: 571px}
+			.row.content {height: auto}
 			
 			.sidenav {
 				padding-top: 15px;
-				background-color: #f7f7f7;
-				height: 100%;
+				background-color: #fff;
+				height: auto;
 				//border: 1px solid red
 			}
 			
@@ -49,12 +49,12 @@
 			}
 			
 			html{
-				min-height: 100%;
+				height: 100%;
 				font-family: 'Ubuntu', Arial;
 				
 			}
 			body{
-				margin-bottom: 50px;
+				//margin-bottom: 50px;
 				font-family: 'Ubuntu', Arial;
 			}
 			
@@ -62,35 +62,39 @@
 				font-family: 'Comfortaa', Arial;
 				text-align: center;
 			
-			#my{
-				font-family: 'Comfortaa', Arial;
-			}
-			
 			}
 			footer{
 				position: absolute;
-				bottom: 0px;
 				width: 100%;
+				left: 0px;
+				bottom: 0px;
+				/*
+				
+				
 				background: #eee;
 				line-height: 50px;
-				left: 0px;
+				*/
 			}
 			tr{
 				height:30px
+			}
+			th, td{
+				width: 300px;
 			}
 			.tbl{
 				height: 550px;
 			}
 			table{
+				
 				margin: 0 0 0 0;
 			}
-			.pag{
+			/*.pag{
 				width: 200px;
 				position: absolute;
 				left: 50%;
 				bottom: 0px;
 				margin: -100px 0 0 -100px;
-			}
+			}*/
 			
 		</style>
 
@@ -105,7 +109,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>                        
 				</button>
-				<a id = "my" class = "navbar-brand" href = "{{ url('/') }}">Albums</a>
+				<a class = "navbar-brand" href = "{{ url('/') }}">Albums</a>
 			</div>
 			
 			<div class="collapse navbar-collapse" id="myNavbar">

@@ -14,7 +14,7 @@
 
 @section('content')
 <div class = "tbl">
-     <table class = "table-striped table-hover" style="width: 100%; height:300px">
+     <table class = "table-striped table-hover" style="width: 100%;">
 		 
 		 <tr>
 				<th>id</th>
