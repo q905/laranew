@@ -35,3 +35,10 @@ Route::post('/update', 'AlbumController@update');
 Route::get('/dev', function(){
 		return view('dev'); 
 	});
+
+//AdminLTE
+Route::get('/admin', function(){
+		return view('adminlte.admin_template');
+	});
+	
+Route::get('/test', 'TestController@index');
